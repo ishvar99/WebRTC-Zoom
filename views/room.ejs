@@ -5,13 +5,14 @@
     <title>Video Chat App</title>
     <style>
       #video-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 300px);
-        grid-template-rows: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
       }
       video {
-        width: 100%;
-        height: 100%;
+        margin: 50px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
       }
     </style>
@@ -20,9 +21,9 @@
     <script>
       const roomId = "<%=roomId%>"
     </script>
-    <script src="script.js"></script>
   </head>
   <body>
     <div id="video-grid"></div>
   </body>
+  <script src="script.js"></script>
 </html>
